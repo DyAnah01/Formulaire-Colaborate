@@ -1,16 +1,17 @@
 <?php
 
-require __DIR__ .'/vendor/autoload.php';
+require __DIR__ . '/vendor/autoload.php'; 
+
 
 use Twig\Environment;
-use Twig\Loader\FilesystemLoader;
+use Twig\Loader\FilesystemLoader; 
 
-
-$loader = new FilesystemLoader(__DIR__ . '/views');
+$loader = new FilesystemLoader(__DIR__ .'/views');
 $twig = new Environment($loader, [
-    'cache' => false
+    'cache' => false   
 ]);
 
-echo $twig->render('form.html.twig',[
+echo $twig->render('index.html.twig',[
+
 
 ]);
