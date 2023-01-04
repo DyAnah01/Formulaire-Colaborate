@@ -11,14 +11,28 @@ $twig = new Environment($loader, [
     'cache' => false   
 ]);
 
-// $page = isset($_GET['page']) ? $_GET['page'] : null;
+$page = isset($_GET['page']) ? $_GET['page'] : null;
 
-// switch{
+switch ($page){
+    case 'accueil':
+        echo $twig->render('index.html.twig',[
+        ]);
+    break;
 
+    case 'sinscrire':
+        echo $twig->render('form.html.twig',[
+        ]);
+    break;
+    case 'seconnecter':
+        echo $twig->render('index.html.twig',[
+        ]);
+    break;
+    // case 'contact':
+    //     echo $twig->render('index.html.twig',[
+    //     ]);
+    // break;
+    default :
+    echo $twig->render('index.html.twig',[
 
-// }
-echo $twig->render('index.html.twig',[
-
-
-
-]);
+    ]);
+}
