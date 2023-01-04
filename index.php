@@ -24,7 +24,7 @@ switch ($page){
         ]);
     break;
     case 'seconnecter':
-        echo $twig->render('index.html.twig',[
+        echo $twig->render('connection.html.twig',[
         ]);
     break;
     // case 'contact':
