@@ -27,10 +27,10 @@ switch ($page){
         echo $twig->render('connection.html.twig',[
         ]);
     break;
-    // case 'contact':
-    //     echo $twig->render('index.html.twig',[
-    //     ]);
-    // break;
+    case 'contact':
+        echo $twig->render('contact.html.twig',[
+        ]);
+    break;
     default :
     echo $twig->render('index.html.twig',[
 
