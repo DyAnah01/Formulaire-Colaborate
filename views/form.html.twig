@@ -1,31 +1,34 @@
-{# {% extends "layout.html.twig" %} #}
+{% extends "layout.html.twig" %}
 
+{% block content %}
+    <h1>formulaire</h1>
 
+    <form action="">
 
+        <label for="">Name</label>
+        <input type="text">
 
-<h1>formulaire</h1>
+        <label for="">Pseudo</label>
+        <input type="text">
 
-<form action="">
+        <label for="">email</label>
+        <input type="email">
 
-    <label for="">Name</label>
-    <input type="text">
+        <label for="">Password</label>
+        <input type="password">
 
-    <label for="">Pseudo</label>
-    <input type="text">
-
-    <label for="">email</label>
-    <input type="email">
-
-    <label for="">Password</label>
-    <input type="password">
-
-    <label for="">Confirm Password</label>
-    <input type="password">
+        <label for="">Confirm Password</label>
+        <input type="password">
 
 
 
 
 
-</form>
+    </form>
+
+{% endblock %}
+
+
+
 
 
