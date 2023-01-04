@@ -11,7 +11,12 @@ $twig = new Environment($loader, [
     'cache' => false   
 ]);
 
+// $page = isset($_GET['page']) ? $_GET['page'] : null;
 
+// switch{
+
+
+// }
 echo $twig->render('index.html.twig',[
 
 
